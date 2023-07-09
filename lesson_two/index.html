@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Second Class</title>
+    <style>
+      [v-cloak] {
+        display: none;
+      }
+      html, body{
+        height: 100%;
+      }
+      body{
+        display: grid;
+        place-items: center;
+      }
+      .txt-red{
+        color: #f00;
+      }
+      .txt-green{
+        color: #009900;
+      }
+      button{
+        padding: 10px 15px;
+        font-size: 1.4em;
+        font-weight: bold;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div v-cloak id="lesson-two">
+        <button :class="isActive? 'txt-red': 'txt-green'"  @click="toggleState()">Click Me</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./AppLesson2.vue"></script>
+  </body>
+</html>
