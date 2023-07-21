@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fourth Class</title>
+    <title>Fifth Class</title>
+    <script src="../unpkg/vue3.js"></script>
+    <script src="../unpkg/tailwind-dev.js"></script>
     <style>
       [v-cloak] {
         display: none;
       }
     </style>
+
   </head>
 
   <body class="h-full grid place-items-center">
@@ -19,8 +22,12 @@
 
     </div>
 
-    <script src="../unpkg/vue3.js"></script>
-    <script src="../unpkg/tailwind-dev.js"></script>
-    <script src="./AppLesson5.js" type="module"></script>
+    <script type="module">
+      //Lesson 5: How to split components into a manageable external templates
+      import App from './components/App.js';
+
+      Vue.createApp(App).mount("#lesson-five");
+    </script>
+    
   </body>
 </html>
