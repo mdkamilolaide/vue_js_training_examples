@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nine Class</title>
+    <script src="../unpkg/vue3.js"></script>
+    <script src="../unpkg/tailwind-dev.js"></script>
+    <style>
+      [v-cloak] {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body class="h-full grid place-items-center bg-gray-800 text-white">
+    <div v-cloak id="lesson-nine"></div>
+
+    <script type="module">
+      // Lesson 7
+      import App from "./App.js";
+
+      Vue.createApp(App).mount("#lesson-nine");
+    </script>
+  </body>
+</html>

@@ -17,11 +17,11 @@ export default {
   props: {
     type: {
       type: String,
-      default: "primary",
+      default: 'primary',
     },
     processing: {
       type: Boolean,
-      default: false
+      default: false,
     },
   },
 };
